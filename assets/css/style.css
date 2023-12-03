@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 .container{
-    width: 100%;
+    max-width: 1300px;
+    margin: auto;
     padding-inline: 4vw;
 
 }
@@ -14,6 +15,7 @@
 /* section 1  */
 .banner{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -51,30 +53,36 @@
     max-height: 600px;
     margin: auto;
 }
+@media(max-width:600px){
+    .text-box{
+        padding-inline: 40px;
+    }
+}
 /* section 2  */
 .feature{
     display: flex;
-    justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
 }
 .feature_top{
     max-width: 550px;
+    padding-block: 30px;
 }
 .feature_top_title{
     font-size: 25px;
+    padding-block-end: 10px;
 }
 .feature_top_text{
     font-size: 10px;
 }
 .cards{
-    width: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    gap: 40px;
+    gap:200px;
 }
 .card{
 
@@ -86,7 +94,7 @@
     -o-border-radius:50% 50% 0 0 ;
 }
 .card_img{
-    height: 300px;
+    height: 250px;
     padding-inline: 50px;
     padding-block-start:50px ;
     display:block;
@@ -94,4 +102,31 @@
 .card_link{
     color: #000;
     font-weight: 700;
+}
+/* section 3  */
+.deal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(216, 88, 131, 0.355);
+    margin-block-start: 40px;
+}
+.text-box-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+}
+.deal-half{
+    width: 50%;
+    text-align: center;
+}
+.title-2{
+ font-size: 2em;
+}
+.text-2{
+    font-size: 10px;
 }
