@@ -110,6 +110,7 @@
     align-items: center;
     background-color: rgba(216, 88, 131, 0.355);
     margin-block-start: 40px;
+    padding-inline: 50px;
 }
 .text-box-2{
     display: flex;
@@ -129,4 +130,12 @@
 }
 .text-2{
     font-size: 10px;
+}
+@media(max-width:600px){
+    .deal{
+        flex-direction: column;
+    }
+    .deal-half{
+        padding-block: 50px;
+    }
 }
