@@ -111,6 +111,7 @@
     background-color: rgba(216, 88, 131, 0.355);
     margin-block-start: 40px;
     padding-inline: 50px;
+    padding-block: 40px;
 }
 .text-box-2{
     display: flex;
