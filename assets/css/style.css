@@ -93,17 +93,18 @@
 }
 .card{
     width: 300px;
+    margin-block: 15px;
 }
 .card_link{
     color: #000;
     font-weight: 700;
 }
 .card_img_1{
-    background:center no-repeat url("../img/flower_2.png") red;
-    background-size: contain;
+    background:bottom no-repeat url("../img/flower_2.png") red;
+    background-size: 200px;
     border-radius:50% 50% 0 0 ;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 250px;
     margin-block-end: 20px;
     -webkit-border-radius:50% 50% 0 0 ;
     -moz-border-radius:50% 50% 0 0 ;
