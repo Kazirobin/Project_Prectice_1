@@ -9,9 +9,7 @@
     padding-inline: 4vw;
 
 }
-.half{
-     max-width: 500px;
-}
+
 /* section 1  */
 .banner{
     display: flex;
@@ -30,9 +28,17 @@
     gap: 30px;
     padding-inline-start: 150px;
 }
-@media(max-width:576px){
+.banner_left,
+.banner_right{
+    width: 50%;
+}
+@media(max-width:856px){
     .text-box{
         padding-inline-start: 10px;
+    }
+    .banner_left,
+    .banner_right{
+        width: 100%;
     }
 }
 .title{
@@ -53,6 +59,7 @@
     -o-border-radius: 5px;
 }
 .img-1{
+    display: block;
     padding-inline: 30px;
     max-width: 100%;
     max-height: 600px;
