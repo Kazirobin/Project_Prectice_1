@@ -9,7 +9,33 @@
     padding-inline: 4vw;
 
 }
-
+/* nav  */
+nav{
+    background-color: purple;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+nav ul li{
+list-style: none;
+}
+nav ul li a,.logo{
+    color: aliceblue;
+    -webkit-text-stroke:1px darkblue;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    padding: 10px 20px;
+    background-color: aqua;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
 /* section 1  */
 .banner{
     display: flex;
