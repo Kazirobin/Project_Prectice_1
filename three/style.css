@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+}
+body{
+    font-family: Lato;
+}
+:root{
+    --color--light:#fff;
+    --color--hover:#58c93a;
+    --color--gary:#818181;
+    --color--dark:#000;
+    --text-xxl:40px;
+    --text-xl:28px;
+    --text-l:18px;
+    --text-m:16px;
+    --text-s:13px;
+    --text-xs:12px;
+}
+/* navbar section  */
+.navbar{background-color: #fff;}
+.navbar__logo{background-color: #fff;}
+.navbar__logo__link{background-color: #fff;}
+.navbar__menu{background-color: #fff;}
+.navbar__menu__item{padding: 0;}
+/* blog section  */
+.container{background-color: #fff;}
