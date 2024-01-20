@@ -58,6 +58,13 @@ body , html{
   color: var(--color--hover);
   border-bottom: 6px var(--color--hover) solid;
 }
+/* home section  */
+.home{
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr) ;
+  max-width: 100rem;
+  margin: 0 auto;
+}
 /* blog section  */
 .container {
   background-color: #fff;
@@ -72,3 +79,22 @@ body , html{
 .blog__text{background-color: #fff;}
 .blog__btn{background-color: #fff;}
 .blog__btn__link{background-color: #fff;}
+
+/* .pagination section */
+.pagination{
+  background-color: #818181;
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+}
+/* footer section  */
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer__icons{
+  display: flex;
+  
+}
