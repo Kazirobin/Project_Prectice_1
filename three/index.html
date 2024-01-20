@@ -1,39 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css"
+      integrity="sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="navbar__logo">
-            <a href="#!" class="navbar__logo__link">Blogin</a>
-        </div>
-        <div class="navbar__menu">
-            <a href="#!" class="navbar__menu__item">Journal</a>
-            <a href="#!" class="navbar__menu__item">About</a>
-            <a href="#!" class="navbar__menu__item">Work</a>
-            <a href="#!" class="navbar__menu__item">Contact</a>
-        </div>
+      <div class="navbar__logo">
+        <a href="#!" class="navbar__logo__link">Blogin</a>
+      </div>
+      <div class="navbar__menu">
+        <a href="#!" class="navbar__menu__item">Journal</a>
+        <a href="#!" class="navbar__menu__item">About</a>
+        <a href="#!" class="navbar__menu__item">Work</a>
+        <a href="#!" class="navbar__menu__item">Contact</a>
+      </div>
     </nav>
     <section class="container">
-        <div class="blog">
-            <img src="./img/img1.jpg" alt="" class="blog__img">
-            <h1 class="blog__title">Duis aute irure dolor in henderit in voluptate.</h1>
-            <p class="blog__text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipop ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-                <br>
+      <div class="blog">
+        <img src="./img/img1.jpg" alt="" class="blog__img" />
+        <h1 class="blog__title">
+          Duis aute irure dolor in henderit in voluptate.
+        </h1>
+        <p class="blog__text">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquipop ex ea commo doconsequat, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.
+          <br />
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur...
+        </p>
+        <button class="blog__btn">
+          <a href="#!" class="blog__btn__link">Continue Reading </a>
+        </button>
+      </div>
 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                <button class="blog__btn"><a href="#!" class="blog__btn__link">Continue Reading </a></button>
+      <div class="blog">
+        <img src="./img/img2.jpg" alt="" class="blog__img" />
+        <h1 class="blog__title">
+          Duis aute irure dolor in henderit in voluptate.
+        </h1>
+        <p class="blog__text">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquipop ex ea commo doconsequat, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.
+          <br />
 
-        </div>
-
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur...
+        </p>
+        <button class="blog__btn">
+          <a href="#!" class="blog__btn__link">Continue Reading </a>
+        </button>
+      </div>
     </section>
-    <aside class="sidebar">
 
+    <aside class="sidebar">
+      <div class="contant">
+        <h3 class="contant__title">About Blogin.</h3>
+        <p class="contant__text">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur.
+          <br />
+          Excepteur sint occaecat sunt in culpa qui officia deserunt mollit anim
+          id est laborum.
+        </p>
+      </div>
+      <div class="contant">
+        <h3 class="contant__title">Search.</h3>
+        <p class="contant__text">What are you looking for?</p>
+      </div>
+      <div class="contant">
+        <h3 class="contant__title">Stay Tuned.</h3>
+        <input
+          class="contant__input"
+          type="email"
+          name=""
+          id=""
+          placeholder="Your Email"
+        />
+      </div>
     </aside>
-    
-</body>
+
+    <div class="pagination">
+      <a href="#!" class="pagination__btn__prev">Previous</a>
+      <a href="#!" class="pagination__btn__next">Next</a>
+    </div>
+
+    <footer class="footer">
+      <h1 class="footer__logo">Blogin</h1>
+      <p class="footer__text">
+        © 2014 Blogin.com - All Rights Reserved - Find more free Templates at
+        Pixelhint.com
+      </p>
+      <div class="footer__icons">
+        <div class="footer__icon">
+          <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <div class="footer__icon">
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="footer__icon">
+          <i class="fa-brands fa-behance"></i>
+        </div>
+        <div class="footer__icon">
+          <i class="fa-brands fa-dribbble"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
