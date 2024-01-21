@@ -97,6 +97,10 @@ html {
   grid-template-columns: repeat(2, 1fr);
   max-width: 100rem;
   margin: 0 auto;
+  @media(max-width:900px){
+    display: flex;
+    flex-direction: column;
+  }
 }
 /* blog section  */
 .container {
