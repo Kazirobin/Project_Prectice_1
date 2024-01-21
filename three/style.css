@@ -147,7 +147,9 @@ html {
   margin-left: 0.8rem;
   margin-right: 1.4rem;
 }
-
+/* sidebar section  */
+.contant__title{}
+.contant__text{}
 /* footer section  */
 .footer {
   display: flex;
