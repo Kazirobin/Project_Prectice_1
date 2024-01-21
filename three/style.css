@@ -147,6 +147,7 @@ html {
   margin-left: 0.8rem;
   margin-right: 1.4rem;
 }
+
 /* footer section  */
 .footer {
   display: flex;
@@ -165,3 +166,5 @@ html {
   background-color: var(--color--gary);
   margin-inline: 10px;
 }
+
+
