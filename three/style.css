@@ -47,7 +47,7 @@ html {
 .navbar__menu__item:hover {
   color: var(--color--hover);
   border-bottom: 6px var(--color--hover) solid;
-  @media(max-width:900px){
+  @media(max-width:900px ){
     display: flex;
     flex-direction: column;
     border: 0;
