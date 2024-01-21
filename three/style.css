@@ -148,13 +148,20 @@ html {
   margin-right: 1.4rem;
 }
 /* sidebar section  */
+.contant{
+  padding-inline-start: 3rem;
+}
 .contant__title{font-size: var(--text-m);
 border-left:6px var(--color--hover) solid ;
 padding-block: 2rem; 
-padding-inline-start: 2rem;}
+padding-inline-start: 1.7rem;}
 .contant__text{font-size: var(--text-m);
-  padding-block: 2rem; }
-.contant__input::placeholder{font-size: var(--text-s);}
+  padding-block: 2rem;
+padding-inline-start: 2rem; }
+.contant__input{font-size: var(--text-s);
+padding: 2rem 4rem;
+margin-block: 2rem;
+border: 2px var(--color--gary) solid;}
 /* footer section  */
 .footer {
   display: flex;
