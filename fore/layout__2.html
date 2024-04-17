@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            max-width: 100%;
+        }
+        .grid{
+            display: grid;
+            grid-auto-flow: dense;
+            grid-template-columns: repeat(auto-fit,minmax(min(100%,180px),1fr));
+            grid-template-rows: 120px auto auto;
+            column-gap: 20px;
+            container-type: inline-size;
+        }
+        .product{
+            display: grid;
+            grid-row: span 3;
+            grid-template-rows: subgrid;
+        }
+        .grid .product img{
+            border-radius: 10px;
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="grid">
+        <div class="product">
+            <img src="./img/1.jpg" alt="">
+            <h3 class="product__title">Bat Man</h3>
+            <div class="flex-group">
+                <p class="product__price">$25</p>
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/1.jpg" alt="">
+            <h3 class="product__title">Batt Man</h3>
+            <div class="flex-group">
+                <p class="product__price">$25</p>
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/2.jpg" alt="">
+            <h3 class="product__title">Bat Man</h3>
+            <div class="flex-group">
+                <p class="product__price">$25</p>
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/3.jpg" alt="">
+            <h3 class="product__title">Bat Man</h3>
+            <div class="flex-group">
+                <p class="product__price">$25</p>
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/4.jpg" alt="">
+            <h3 class="product__title">Bat Man</h3>
+            <div class="flex-group">
+                <p class="product__price">$25</p>
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./img/2.jpg" alt="">
+            <h3 class="product__title">Bat Man</h3>
+            <div class="flex-group">
+                <p class="product__price">$25</p>
+                <button>Buy</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
