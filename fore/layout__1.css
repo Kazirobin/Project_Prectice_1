@@ -156,7 +156,7 @@ display: inline-block;
   @media(max-width:1000px)
   {grid-template-columns: 1fr 2fr;
   }
-  @media(max-width:600px)
+  @media(max-width:500px)
   {grid-template-columns: 1fr;}
 }
 .style__3 .row__3{
