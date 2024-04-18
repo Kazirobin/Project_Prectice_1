@@ -235,3 +235,58 @@ display: inline-block;
 .banner img{
   width: 100%;
 }
+/*style__3 start */
+.style__3{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-column-gap: 20px;
+
+}
+@media(max-width:1000px){
+  .style__3{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+@media(max-width:500px){
+  .style__3{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+  @media(max-width:1000px){
+    .style__3 .row__3{
+    grid-column: 1/-1;
+  }
+}
+.style__3 .row__1 .ads img{
+  width: 100%;
+}
+.style__3 .row__3 .widget img{
+  width: 100%;
+
+}
+.style__3 .row__3 .widget ul li{
+ position: relative;
+ padding-left: 20px;
+ margin-left: 10px;
+}
+.style__3 .row__3 .widget ul li::before{
+  content:"·";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size:120px;
+  line-height:20px;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+.style__3 .row__3 .widget ul li a{
+
+  text-decoration: none;
+  color: #000;
+}
