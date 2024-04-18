@@ -46,9 +46,68 @@
       p{
         font-size: 1.4rem;
       }
+      /* navbar section */
+      .navbar__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navbar__top .navbar__top__icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+      }
+      .icon{
+        width: 40px;
+        cursor: pointer;
+      }
+      
     </style>
 </head>
 <body>
+  <section>
+    <div class="banner">
+        <img src="./img/banner.jpg" alt="">
+    </div>
+</section>
+  <section>
+    <navbar>
+      <div class="navbar__top">
+        <div class="navbar__top__icons">
+        <div class="bars">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <img class="icon" src="./img/magnifying-glass.svg" alt="" width="20">
+      </div>
+      <div class="logo">
+        <img src="./img/logo.png" alt="">
+      </div>
+      <div></div>
+    </div>
+<nav class="navbar">
+  <ul class="navbar__menu">
+    <li class="navbar__menu__item"><a href="https://buffaloprotidin.com/" class="navbar__menu__item__link">মূলপাতা</a></li>
+    <li class="navbar__menu__item"><a href="#" class="navbar__menu__item__link">বাফলো</a></li>
+    <li class="navbar__menu__item"><a href="#" class="navbar__menu__item__link">বিশ্ব</a></li>
+    <li class="navbar__menu__item"><a href="#" class="navbar__menu__item__link">খেলা</a></li>
+    <li class="navbar__menu__item"><a href="#" class="navbar__menu__item__link">বিনোদন</a></li>
+    <li class="navbar__menu__item sub"><a href="#" class="navbar__menu__item__link">আরও</a>
+    <ul class="sub__menu">
+      <li class="sub__menu__item"><a href="#" class="sub__menu__item__link">নায়াগ্রা ফলস</a></li>
+      <li class="sub__menu__item"><a href="#" class="sub__menu__item__link">আলবানি</a></li>
+      <li class="sub__menu__item"><a href="#" class="sub__menu__item__link">বাংলাদেশ</a></li>
+      <li class="sub__menu__item"><a href="#" class="sub__menu__item__link">আমেরিকা</a></li>
+      <li class="sub__menu__item"><a href="#" class="sub__menu__item__link">অভিবাসের গল্প</a></li>
+      <li class="sub__menu__item"><a href="#" class="sub__menu__item__link">প্রযুক্তি</a></li>
+    </ul>
+    </li>
+  </ul>
+</nav>
+  </navbar>
+  </section>
     <section>
         <div class="style__1">
   
@@ -224,5 +283,12 @@
             <div class="row row__3"></div>
         </div>
     </section>
+
+    <script>
+      const bars=document.querySelector(".bars")
+         bars.addEventListener('click',function(){
+           bars.classList.toggle('active')
+         })
+         </script>
 </body>
 </html>
