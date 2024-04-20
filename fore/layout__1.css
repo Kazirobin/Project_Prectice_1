@@ -1,3 +1,36 @@
+/* font size  */
+html {
+  font-size: 10px;
+}
+h6 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+p{
+  font-size: 1.4rem;
+}
+.menu.active .menu__items__link{
+  font-size: 1.7rem;}
+  .navbar__menu__item__link{
+    font-size: 1.7rem;}
+    .sub__menu__item__link{
+    font-size: 1.8rem;}
+    .blog h1{
+    font-size: 3.5rem;}
+    .blog p{
+    font-size: 1.7rem;}
+  .recent__title__left,
+  .recent__title__right{
+    font-size: 1.2rem;}
+
+
+
+
+
+
+
+
+
 
   .nav .menu{
     display: none;
@@ -22,7 +55,6 @@
   text-decoration: none;
   color: #fff;
   font-weight: 800;
-  font-size: 1.7rem;
   padding: 10px;
   border-width: 3px;
   height: 40px;
@@ -111,14 +143,12 @@
   display: inline-block;
   padding-inline: 20px;
   padding-block: 10px;
-  font-size: 1.7rem;
   font-weight: 800;
 }
 
 /** FIXME */
 .sub__menu__item__link{
   text-decoration: none;
-  font-size: 1.8rem;
   color: #fff;
   &:hover{
     color: hsla(0, 0%, 0%, 0.891);
@@ -199,11 +229,8 @@ width: 100%;  }
 /* *row__1 style start */
 .blog h1{
   margin-block: 10px;
-  font-size: 3.5rem;
 }
-.blog p{
-  font-size: 1.7rem;
-}
+
 .blog__group{
   margin-block: 15px;
   padding-block: 15px;
@@ -225,7 +252,6 @@ width: 100%;  }
 .recent__title__right{
   padding: 10px;
   color: #000;
-  font-size: 1.2rem;
 }
 .recent__title__left.active,
 .recent__title__right.active{
