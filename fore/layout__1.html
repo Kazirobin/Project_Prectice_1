@@ -21,7 +21,14 @@
         section{
             max-width: 1200px;
             margin: 0 auto;
-            padding-inline: 20px;
+            display: block;
+            padding-inline: 50px;
+            @media (max-width:1000px){
+              padding-inline: 20px;
+            }
+            @media(max-width:600px){
+              padding-inline: 10px;
+            }
         }
         * {
         box-sizing: border-box;
@@ -29,11 +36,7 @@
         margin: 0;
       }
 
-      section{
-        max-width: 1200px;
-    margin: 0 auto;
-    display: block;
-      }
+
       img {
         max-width: 100%;
         margin-block: 10px;
@@ -60,17 +63,39 @@
         width: 40px;
         cursor: pointer;
       }
-      .search{
-        background-color: peru;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-      }
-      .search input{
+      .menu.active .icon{
+        width: 50px;
+        height: 40px;
+        cursor: pointer;
+        background-color: gray;
+        display: inline-block;
         padding: 10px;
+      }
+      .search{
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        height: 40px;
+        @media(max-width:600px){
+          width: 350px;
+        }
+      }
+      .menu.active .search input{
+        background-color: #fff;
+        padding-block: 10px;
+        width: 450px;
         color: #000;
-        font-weight: 700;
+        font-weight: 500;
+        border: 2px solid #000;
+        @media(max-width:600px){
+        width: 250px;
+        display: inline-block;
+      }
+      .search input::placeholder{
+        text-align: left;
+        justify-content: start;
+        align-items: start;
       }
     </style>
 </head>
@@ -100,9 +125,12 @@
       <div></div>
     </div>
     <nav class="nav">
+      <!--
+        FIXME
+        -->
       <ul class="menu ">
         <li class="search">
-          <input type="text" name="" id="search">
+          <input type="text" name="" id="search" placeholder="Search News , topics and more">
         </div>
         <img class="icon"  src="./img/magnifying-glass.svg" alt="" width="20">
       </div>
