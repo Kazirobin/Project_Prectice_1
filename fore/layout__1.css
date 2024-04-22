@@ -377,14 +377,18 @@ display: inline-block;
 }
 .style__3 .row__3 .widget ul li{
  position: relative;
- padding-left: 20px;
+ padding-left: 35px;
  margin-left: 10px;
 }
 .style__3 .row__3 .widget ul li::before{
-  content:"·";
+  content:"";
   position: absolute;
+  height: 15px;
+  width: 15px;
+  background-color: #000;
+  border-radius: 50%;
   left: 0;
-  top: 15%;
+  top: 40%;
   transform: translate(-50%,-50%);
   font-size:120px;
   line-height:20px;
@@ -392,7 +396,12 @@ display: inline-block;
   -moz-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   -o-transform: translate(-50%,-50%);
-  @media(max-width:1000px){
+  @media(max-width:1000px);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+{
     top: 60%;
   }
   @media(max-width:1000px){
