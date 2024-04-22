@@ -377,7 +377,7 @@ display: inline-block;
 }
 .style__3 .row__3 .widget ul li{
  position: relative;
- padding-left: 35px;
+ padding-left: 15px;
  margin-left: 10px;
 }
 .style__3 .row__3 .widget ul li::before{
@@ -396,13 +396,8 @@ display: inline-block;
   -moz-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   -o-transform: translate(-50%,-50%);
-  @media(max-width:1000px);
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-{
-    top: 60%;
+  @media(max-width:1000px){
+    top: 20%;
   }
   @media(max-width:1000px){
     top: 15%;
