@@ -1,6 +1,12 @@
 /* font size  */
+
+@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
+
+
 html {
   font-size: 12px;
+  font-family: 'SolaimanLipi', sans-serif;
+
 }
 h6 {
   font-size: 1rem;
@@ -386,6 +392,12 @@ display: inline-block;
   -moz-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   -o-transform: translate(-50%,-50%);
+  @media(max-width:1000px){
+    top: 60%;
+  }
+  @media(max-width:1000px){
+    top: 15%;
+  }
 }
 .style__3 .row__3 .widget ul li a{
 
