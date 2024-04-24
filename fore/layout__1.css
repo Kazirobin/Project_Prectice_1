@@ -31,6 +31,13 @@ p{
     .search input{
       font-size: 1.2rem;}
 
+footer .title h6,
+footer .icons i,
+footer .links a
+{
+  font-size: 1.3rem;
+  font-weight: 500;
+}
 
 
 
@@ -407,4 +414,50 @@ display: inline-block;
 
   text-decoration: none;
   color: #000;
+}
+/*footer section */
+footer{
+  background-color: #007246;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-block: 20px;
+}
+footer .icons{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+footer .icons .icon{
+  color: #000;
+  background-color:#fff;
+  padding: 5px;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+  footer .links a
+{
+  color: #ffffffaf;
+  text-decoration: none;
+  padding-inline: 5px;
+  border-right: 2px solid#ffffffaf;
+  display: inline;
+  &:hover{
+    color: #fff;
+    border-right: 2px solid#fff;
+  }
+}
+footer .links a:last-child {
+  border-right: none ;
 }
