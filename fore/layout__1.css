@@ -86,8 +86,33 @@ footer .links a
 
 
 
+/* Style the navbar */
+#navbar {
+  background-color: #fff;
+
+}
+
+/* Navbar links */
+
+/* Page content */
 
 
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  display: flex;
+  background-color: #42a8df;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+
+}
+.sticky .nav{
+  width: 100%;
+  padding: 0;
+}
 
 
 
@@ -205,6 +230,7 @@ footer .links a
   grid-template-columns: 2fr 1fr 1fr;
   column-gap: 20px;
   margin-top: 80px;
+  /* margin-top: 140px; */
   @media (max-width:1000px){
     margin-top: 0px;
   }

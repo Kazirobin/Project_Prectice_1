@@ -19,7 +19,9 @@
         img{
             max-width: 100%;
         }
-        section{
+        section
+        
+        {
             max-width: 1200px;
             margin: 0 auto;
             display: block;
@@ -47,6 +49,15 @@
 
 
       /* navbar section */
+      navbar{
+        max-width: 1200px;
+            margin: 0 auto;
+            display: block;
+            padding-inline: 50px;
+            @media (max-width:1000px){
+              padding-inline: 20px;
+            }
+      }
       .navbar__top{
         display: flex;
         justify-content: space-between;
@@ -105,100 +116,100 @@
     </div>
 </section>
   <section>
-    <navbar>
-      <div class="navbar__top">
-        <div class="navbar__top__icons">
-  <div class="bars">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <a href="#search">
+  </section>
+  <navbar id="navbar" class="">
+    <div class="navbar__top">
+      <div class="navbar__top__icons">
+<div class="bars">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <a href="#search">
 
-          <img class="icon" src="./img/magnifying-glass.svg" alt="" width="20" id="search__icon">
-        </a>
-      </div>
-      <div class="logo">
-        <img src="./img/logo.png" alt="">
-      </div>
-      <div></div>
+        <img class="icon" src="./img/magnifying-glass.svg" alt="" width="20" id="search__icon">
+      </a>
     </div>
-    <nav class="nav">
-      <!--
-        FIXME
-        -->
-      <ul class="menu ">
-        <li class="search">
-          <input type="text" name="" id="search" placeholder="Search News , topics and more">
-        </div>
-        <img class="icon"  src="./img/magnifying-glass.svg" alt="" width="20">
+    <div class="logo">
+      <img src="./img/logo.png" alt="">
+    </div>
+    <div></div>
+  </div>
+  <nav class="nav">
+    <!--
+      FIXME
+      -->
+    <ul class="menu ">
+      <li class="search">
+        <input type="text" name="" id="search" placeholder="Search News , topics and more">
       </div>
+      <img class="icon"  src="./img/magnifying-glass.svg" alt="" width="20">
+    </div>
 
+      </li>
+      <li class="menu__items">
+        <a href="#" class="menu__items__link">মূলপাতা</a>
         </li>
-        <li class="menu__items">
-          <a href="#" class="menu__items__link">মূলপাতা</a>
-          </li>
-        <li class="menu__items">
-          <a href="#" class="menu__items__link">বাফলো</a>
-          </li>
-        <li class="menu__items">
-          <a href="#" class="menu__items__link">বিশ্ব</a>
-       </li>
-        <li class="menu__items">
-          <a href="#" class="menu__items__link">খেলা</a>
-          </li>
-        <li class="menu__items">
-          <a href="#" class="menu__items__link">বিনোদন</a>
-          </li>
-        <li class="menu__items">
-          <a href="#" class="menu__items__link">নায়াগ্রা ফলস</a>
-          </li>
-        <li class="menu__items">
-          <a href="#" class="menu__items__link">আলবানি</a>
-          </li>
-        <li class="menu__items">
-          <a href="#" class="menu__items__link">বাংলাদেশ</a>
-          </li>
-        <li class="menu__items">
-          <a href="#" class="menu__items__link">আমেরিকা</a>
-          </li>
-        <li class="menu__items">
-          <a href="#" class="menu__items__link sub">প্রযুক্তি</a>
-          <ul class="sub__menu">
-            <li class="sub__menu__items"><a href="#"
-            class="sub__menu__items__link">Sub Item 1</a></li>
-            <li class="sub__menu__items"><a href="#" class="sub__menu__items__link">Sub Item 2</a></li>
-            <li class="sub__menu__items"><a href="#" class="sub__menu__items__link">Sub Item 3</a></li>
-          </ul>
-          </li>
-        <li class="menu__items">
-          <a href="#" class="menu__items__link">অভিবাশের গল্প</a>
-          </li>
-      </ul>
-    </nav>
+      <li class="menu__items">
+        <a href="#" class="menu__items__link">বাফলো</a>
+        </li>
+      <li class="menu__items">
+        <a href="#" class="menu__items__link">বিশ্ব</a>
+     </li>
+      <li class="menu__items">
+        <a href="#" class="menu__items__link">খেলা</a>
+        </li>
+      <li class="menu__items">
+        <a href="#" class="menu__items__link">বিনোদন</a>
+        </li>
+      <li class="menu__items">
+        <a href="#" class="menu__items__link">নায়াগ্রা ফলস</a>
+        </li>
+      <li class="menu__items">
+        <a href="#" class="menu__items__link">আলবানি</a>
+        </li>
+      <li class="menu__items">
+        <a href="#" class="menu__items__link">বাংলাদেশ</a>
+        </li>
+      <li class="menu__items">
+        <a href="#" class="menu__items__link">আমেরিকা</a>
+        </li>
+      <li class="menu__items">
+        <a href="#" class="menu__items__link sub">প্রযুক্তি</a>
+        <ul class="sub__menu">
+          <li class="sub__menu__items"><a href="#"
+          class="sub__menu__items__link">Sub Item 1</a></li>
+          <li class="sub__menu__items"><a href="#" class="sub__menu__items__link">Sub Item 2</a></li>
+          <li class="sub__menu__items"><a href="#" class="sub__menu__items__link">Sub Item 3</a></li>
+        </ul>
+        </li>
+      <li class="menu__items">
+        <a href="#" class="menu__items__link">অভিবাশের গল্প</a>
+        </li>
+    </ul>
+  </nav>
 
 
 <nav class="navbar">
-  <ul class="navbar__menu">
-    <li class="navbar__menu__item"><a href="https://buffaloprotidin.com/" class="navbar__menu__item__link">মূলপাতা</a></li>
-    <li class="navbar__menu__item"><a href="#" class="navbar__menu__item__link">বাফলো</a></li>
-    <li class="navbar__menu__item"><a href="#" class="navbar__menu__item__link">বিশ্ব</a></li>
-    <li class="navbar__menu__item"><a href="#" class="navbar__menu__item__link">খেলা</a></li>
-    <li class="navbar__menu__item"><a href="#" class="navbar__menu__item__link">বিনোদন</a></li>
-    <li class="navbar__menu__item sub"><a href="#" class="navbar__menu__item__link">আরও</a>
-    <ul class="sub__menu">
-      <li class="sub__menu__item"><a href="#" class="sub__menu__item__link">নায়াগ্রা ফলস</a></li>
-      <li class="sub__menu__item"><a href="#" class="sub__menu__item__link">আলবানি</a></li>
-      <li class="sub__menu__item"><a href="#" class="sub__menu__item__link">বাংলাদেশ</a></li>
-      <li class="sub__menu__item"><a href="#" class="sub__menu__item__link">আমেরিকা</a></li>
-      <li class="sub__menu__item"><a href="#" class="sub__menu__item__link">অভিবাসের গল্প</a></li>
-      <li class="sub__menu__item"><a href="#" class="sub__menu__item__link">প্রযুক্তি</a></li>
-    </ul>
-    </li>
+<ul class="navbar__menu">
+  <li class="navbar__menu__item"><a href="https://buffaloprotidin.com/" class="navbar__menu__item__link">মূলপাতা</a></li>
+  <li class="navbar__menu__item"><a href="#" class="navbar__menu__item__link">বাফলো</a></li>
+  <li class="navbar__menu__item"><a href="#" class="navbar__menu__item__link">বিশ্ব</a></li>
+  <li class="navbar__menu__item"><a href="#" class="navbar__menu__item__link">খেলা</a></li>
+  <li class="navbar__menu__item"><a href="#" class="navbar__menu__item__link">বিনোদন</a></li>
+  <li class="navbar__menu__item sub"><a href="#" class="navbar__menu__item__link">আরও</a>
+  <ul class="sub__menu">
+    <li class="sub__menu__item"><a href="#" class="sub__menu__item__link">নায়াগ্রা ফলস</a></li>
+    <li class="sub__menu__item"><a href="#" class="sub__menu__item__link">আলবানি</a></li>
+    <li class="sub__menu__item"><a href="#" class="sub__menu__item__link">বাংলাদেশ</a></li>
+    <li class="sub__menu__item"><a href="#" class="sub__menu__item__link">আমেরিকা</a></li>
+    <li class="sub__menu__item"><a href="#" class="sub__menu__item__link">অভিবাসের গল্প</a></li>
+    <li class="sub__menu__item"><a href="#" class="sub__menu__item__link">প্রযুক্তি</a></li>
   </ul>
+  </li>
+</ul>
 </nav>
-  </navbar>
-  </section>
+</navbar>
     <section>
         <div class="style__1">
   
@@ -478,6 +489,29 @@
           bars.classList.toggle('active')
            navMenu.classList.toggle('active')
          })
+
+
+
+         // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+var noSticky=document.querySelector('.no-sticky');
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+    navbar.classList.add("noSticky")
+  } else {
+    navbar.classList.remove("sticky");
+    navbar.classList.remove("noSticky");
+  }
+}
          </script>
 </body>
 </html>
