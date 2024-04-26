@@ -13,7 +13,7 @@
   }
    .menu.active{
     display: inline-block;
-
+    margin-left: -80px;
   }
   .menu.active .menu__items{
     background-color: #fff;
