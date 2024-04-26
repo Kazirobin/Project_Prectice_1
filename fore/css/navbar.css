@@ -1,0 +1,269 @@
+
+
+
+
+.nav .menu{
+    position: absolute;
+    width: 300px;
+    z-index: 2;
+    display: none;
+    @media(max-width:500px){
+      width: 80%;
+    }
+  }
+   .menu.active{
+    display: inline-block;
+
+  }
+  .menu.active .menu__items{
+    background-color: #fff;
+    padding-bottom: 5px;
+  }
+  .menu.active .menu__items__link{
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-weight: 900;
+  padding: 10px;
+  border-width: 3px;
+  height: 40px;
+  border-left: 10px solid #fff ;
+  &:hover{
+    color: #000;
+    border-left: 10px solid #000 ;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+}
+}
+
+
+
+
+/* Style the navbar */
+#navbar {
+  background-color: #fff;
+
+}
+
+/* Navbar links */
+
+/* Page content */
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  display: flex;
+  background-color: #42a8df;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+}
+.sticky .navbar__top{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+}
+.sticky .navbar__top .navbar__top__icons{
+margin-left: 80px;
+}
+.sticky .nav{
+position: fixed;
+margin-top: 100px;
+z-index: 3;
+height: 100px;
+width: 100%;
+padding-left: 130px;
+}
+.sticky .nav.active{
+    display: flex;
+}
+.sticky .navbar{
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  margin-top: 100px;
+  margin-left: -130px;
+}
+.sticky .navbar .navbar__menu{
+    width: 1600px;
+    position: fixed;
+    top: 10;
+}
+
+
+
+
+
+
+ /** toggle bar **/
+ .bars{
+  height: 40px;
+  width: 35px;
+  cursor: pointer;
+}
+.bar{
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  display: block;
+  margin: 6px 0;
+  border-radius: 5px;
+  transition: 0.4s ease-in ;
+}
+.bars.active .bar:nth-child(2){
+  transition: 0.4s ease-in ;
+  transform: translateX(250%);
+  width: 0px;
+}
+.bars.active .bar:first-child{
+  transition: 0.4s ease-in ;
+  transform: rotate(-45deg) translate(-8px,7px);
+}
+.bars.active .bar:last-child{
+  transition: 0.4s ease-in ;
+  transform: rotate(45deg) translate(-8px,-8px);
+  
+}
+/*menu */
+.navbar{
+  position: relative;
+  display: block;
+}
+.navbar__menu{
+  background-color: green;
+  width: 100%;
+  display:flex;
+  position: absolute;
+  transform: translateX(-50%,-50%);
+  align-items: center;
+  justify-content: center;
+  -webkit-transform: translateX(-50%,-50%);
+  -moz-transform: translateX(-50%,-50%);
+  -ms-transform: translateX(-50%,-50%);
+  -o-transform: translateX(-50%,-50%);
+}
+.navbar__menu__item{
+  margin-left: 10px;
+  border-bottom: 3px solid green;
+&:hover{
+  border-bottom: 3px solid #000;
+
+}
+}
+.navbar__menu__item__link{
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding-inline: 20px;
+  padding-block: 10px;
+  font-weight: 800;
+}
+
+/** FIXME */
+.navbar__menu__item:hover .sub__menu__item__link{
+  color: #fff;
+}
+.sub__menu__item__link{
+  text-decoration: none;
+  color: #fff;
+
+}
+.sub__menu__item{
+  border-bottom: 3px solid #fff;
+  padding-block: 5px;
+  padding-inline: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(17, 17, 17, 0.619);
+  width: 150px;
+  font-weight: 800;
+  &:hover{
+   border-bottom: 3px solid #000;
+   background-color: green;
+
+ } 
+}
+.sub{
+  position: relative;
+}
+.sub:hover .sub__menu{
+  display: block;
+}
+.sub__menu{
+  position: absolute;
+  display: none;
+}
+@media(max-width:1000px){
+
+  .navbar__menu{
+    display: none;
+  }
+}
+
+
+      /* navbar section */
+      navbar{
+        max-width: 1200px;
+            margin: 0 auto;
+            display: block;
+            padding-inline: 50px;
+            @media (max-width:1000px){
+              padding-inline: 20px;
+            }
+      }
+      .navbar__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navbar__top .navbar__top__icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+      }
+      .icon{
+        width: 40px;
+        cursor: pointer;
+      }
+      .menu.active .icon{
+        width: 50px;
+        height: 40px;
+        cursor: pointer;
+        background-color: gray;
+        display: inline-block;
+        padding: 10px;
+      }
+      .search{
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        height: 40px;
+        @media(max-width:600px){
+          width: 350px;
+        }
+      }
+      .menu.active .search input{
+        background-color: #fff;
+        padding-block: 10px;
+        width: 450px;
+        color: #000;
+        font-weight: 500;
+        border: 2px solid #000;
+        @media(max-width:600px){
+        width: 250px;
+        display: inline-block;
+      }
+      .search input::placeholder{
+        text-align: left;
+        justify-content: start;
+        align-items: start;
+      }
+
