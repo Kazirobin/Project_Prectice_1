@@ -13,7 +13,6 @@
   }
    .menu.active{
     display: inline-block;
-    margin-left: -80px;
   }
   .menu.active .menu__items{
     background-color: #fff;
@@ -78,12 +77,12 @@ position: fixed;
 margin-top: 100px;
 z-index: 3;
 height: 100px;
-width: 100%;
-padding-left: 130px;
+width: 437px;
+@media (max-width:600px) {
+    
 }
-.sticky .nav.active{
-    display: flex;
 }
+
 .sticky .navbar{
   height: 50px;
   width: 100%;
