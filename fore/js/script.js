@@ -1,22 +1,10 @@
-const bars=document.querySelector(".bars")
-const navMenu=document.querySelector(".nav .menu")
-const searchIcon=document.querySelector("#search__icon")
-   bars.addEventListener('click',function(){
-     bars.classList.toggle('active')
-     navMenu.classList.toggle('active')
-   })
-   searchIcon.addEventListener('click',function(){
-    bars.classList.toggle('active')
-     navMenu.classList.toggle('active')
-   })
-
-
 
    // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
 // Get the navbar
 var navbar = document.getElementById("navbar");
+var search = document.getElementById("search");
 
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
@@ -29,3 +17,20 @@ navbar.classList.add("sticky")
 navbar.classList.remove("sticky");
 }
 }
+
+
+
+const bars=document.querySelector(".bars")
+const navMenu=document.querySelector(".nav .menu")
+const searchIcon=document.querySelector("#search__icon")
+   bars.addEventListener('click',function(){
+     bars.classList.toggle('active')
+     navMenu.classList.toggle('active')
+     searchIcon.style.display = (searchIcon.style.display === "none") ? "block" : "none";
+   })
+   searchIcon.addEventListener('click',function(){
+    bars.classList.toggle('active')
+     navMenu.classList.toggle('active')
+   })
+
+
