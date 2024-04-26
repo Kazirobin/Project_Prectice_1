@@ -71,6 +71,10 @@
 }
 .sticky .navbar__top .navbar__top__icons{
 margin-left: 80px;
+@media (max-width:600px){
+  margin-left: 10px;
+
+}
 }
 .sticky .nav{
 position: fixed;
