@@ -20,17 +20,19 @@ navbar.classList.remove("sticky");
 
 
 
+
+function barToggle(){
+  bars.classList.toggle('active')
+  navMenu.classList.toggle('active')
+  searchIcon.style.display = (searchIcon.style.display === "none") ? "block" : "none";
+}
+
+
 const bars=document.querySelector(".bars")
 const navMenu=document.querySelector(".nav .menu")
 const searchIcon=document.querySelector("#search__icon")
-   bars.addEventListener('click',function(){
-     bars.classList.toggle('active')
-     navMenu.classList.toggle('active')
-     searchIcon.style.display = (searchIcon.style.display === "none") ? "block" : "none";
-   })
-   searchIcon.addEventListener('click',function(){
-    bars.classList.toggle('active')
-     navMenu.classList.toggle('active')
-   })
+   bars.addEventListener('click',barToggle)
+   searchIcon.addEventListener('click',barToggle)
+
 
 
