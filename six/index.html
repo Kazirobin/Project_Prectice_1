@@ -34,22 +34,24 @@
         <navbar class="navbar">
           <div class="navbar__top">
             <div class="icons">
-              <!-- nav open icon  -->
-    <button>
-                <span class="nav_icon open">
-                  <svg
-                    viewBox="0 0 32 32"
-                    width="20"
-                    height="20"
-                    category="actions"
-                    icon="list-view-text"
-                  >
-                    <path
-                      d="M1 7.5h30V1.9H1v5.6zm0 22.6h30v-5.6H1v5.6zm0-11.3h30v-5.6H1v5.6z"
-                    ></path>
-                  </svg>
-                </span>
-              </button>
+              <div class="icon">
+                <!-- nav open icon  -->
+                <button>
+                  <span class="nav_icon open">
+                    <svg
+                      viewBox="0 0 32 32"
+                      width="20"
+                      height="20"
+                      category="actions"
+                      icon="list-view-text"
+                    >
+                      <path
+                        d="M1 7.5h30V1.9H1v5.6zm0 22.6h30v-5.6H1v5.6zm0-11.3h30v-5.6H1v5.6z"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
               <div class="icon">
                 <!-- nav close icon  -->
                 <button>
@@ -68,27 +70,31 @@
                   </span>
                 </button>
               </div>
-              <!-- search icon -->
-              <button>
-                <span class="nav_icon search">
-                  <svg
-                    viewBox="0 0 32 32"
-                    width="20"
-                    height="20"
-                    category="actions"
-                    icon="search"
-                  >
-                    <path
-                      d="m30.6 28.1-8.3-8.3c1.5-2 2.4-4.4 2.4-7.2C24.7 6 19.6 1 13 1S1.4 6.1 1.4 12.7 6.5 24.3 13 24.3c2.3 0 4.4-.6 6.2-1.8l8.5 8.5 2.9-2.9zM4 12.6c0-5.2 3.9-9.1 9-9.1s9 3.9 9 9.1c0 5.2-3.9 9.1-9 9.1s-9-3.9-9-9.1z"
-                    ></path>
-                  </svg>
-                </span>
-              </button>
+              <div class="icon">
+                <!-- search icon -->
+                <button>
+                  <span class="nav_icon search">
+                    <svg
+                      viewBox="0 0 32 32"
+                      width="20"
+                      height="20"
+                      category="actions"
+                      icon="search"
+                    >
+                      <path
+                        d="m30.6 28.1-8.3-8.3c1.5-2 2.4-4.4 2.4-7.2C24.7 6 19.6 1 13 1S1.4 6.1 1.4 12.7 6.5 24.3 13 24.3c2.3 0 4.4-.6 6.2-1.8l8.5 8.5 2.9-2.9zM4 12.6c0-5.2 3.9-9.1 9-9.1s9 3.9 9 9.1c0 5.2-3.9 9.1-9 9.1s-9-3.9-9-9.1z"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
             </div>
+
             <div class="logo">
               <h1><span>B</span><span>B</span><span>C</span></h1>
             </div>
-            <div></div>
+
+            <div class="empty"></div>
           </div>
           <div class="navbar__toggle">
             <nav class="nav">
@@ -102,7 +108,8 @@
                       width="20"
                       height="20"
                       category="actions"
-                      icon="search">
+                      icon="search"
+                    >
                       <path
                         d="m30.6 28.1-8.3-8.3c1.5-2 2.4-4.4 2.4-7.2C24.7 6 19.6 1 13 1S1.4 6.1 1.4 12.7 6.5 24.3 13 24.3c2.3 0 4.4-.6 6.2-1.8l8.5 8.5 2.9-2.9zM4 12.6c0-5.2 3.9-9.1 9-9.1s9 3.9 9 9.1c0 5.2-3.9 9.1-9 9.1s-9-3.9-9-9.1z"
                       ></path>
@@ -113,65 +120,67 @@
               <ul class="nav__menu">
                 <li class="nav__menu__item">
                   <a href="#" class="nav__menu__item__link">Home</a>
-                  <li class="nav__menu__item">
-                      <a href="#" class="nav__menu__item__link">News</a>
-                      <!-- arrow icon  -->
-      <button>
-          <span class="nav_icon arrow">
-            <svg
-              viewBox="0 0 32 32"
-              width="1em"
-              height="1em"
-              category="arrows"
-              icon="chevron-down">
-              <path
-                d="M17.7 22.6.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4zm0 0L.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4z"
-              ></path></svg
-          ></span>
-      </li>
-  </button>
-  <ul class="nav__menu__item__subMenu">
-      <li class="nav__menu__item__subMenu__item">
-  <a href="#" class="nav__menu__item__subMenu__item__link"> News</a>
-        </li>
-        <li class="nav__menu__item__subMenu__item">
-            <a href="#" class="nav__menu__item__subMenu__item__link">NewsIsrael-Gaza War</a
-            >
-        </li>
-        
-        
-        <li class="nav__menu__item__subMenu__item">
-<a href="#" class="nav__menu__item__subMenu__item__link">War in Ukraine</a
+                </li>
+                <li class="nav__menu__item">
+                  <a href="#" class="nav__menu__item__link">News</a>
+                  <!-- arrow icon  -->
+                  <button>
+                    <span class="nav_icon arrow">
+                      <svg
+                        viewBox="0 0 32 32"
+                        width="1em"
+                        height="1em"
+                        category="arrows"
+                        icon="chevron-down"
                       >
-                    </li>
+                        <path
+                          d="M17.7 22.6.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4zm0 0L.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4z"
+                        ></path></svg
+                    ></span>
+                  </button>
 
-
-
+                  <ul class="nav__menu__item__subMenu">
                     <li class="nav__menu__item__subMenu__item">
-                      <a href="#" class="nav__menu__item__subMenu__item__link">India Election</a
+                      <a href="#" class="nav__menu__item__subMenu__item__link">
+                        News</a
                       >
                     </li>
                     <li class="nav__menu__item__subMenu__item">
                       <a href="#" class="nav__menu__item__subMenu__item__link"
+                        >NewsIsrael-Gaza War</a
+                      >
+                    </li>
+
+                    <li class="nav__menu__item__subMenu__item">
+                      <a href="#" class="nav__menu__item__subMenu__item__link"
+                        >War in Ukraine</a
+                      >
+                    </li>
+
+                    <li class="nav__menu__item__subMenu__item">
+                      <a href="#" class="nav__menu__item__subMenu__item__link"
+                        >India Election</a
+                      >
+                    </li>
+
+                    <li class="nav__menu__item__subMenu__item">
+                      <a href="#" class="nav__menu__item__subMenu__item__link"
                         >World</a
                       ><!-- arrow icon  -->
-            <button>
-                <span class="nav_icon arrow">
-                <svg
-                viewBox="0 0 32 32"
-                width="1em"
-                height="1em"
-                category="arrows"
-                icon="chevron-down"
-                
-                >
-                <path
-                d="M17.7 22.6.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4zm0 0L.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4z"
-                ></path></svg
-                ></span>
-                </li>
-                   </button> 
-                </ul>
+                      <button>
+                        <span class="nav_icon arrow">
+                          <svg
+                            viewBox="0 0 32 32"
+                            width="1em"
+                            height="1em"
+                            category="arrows"
+                            icon="chevron-down"
+                          >
+                            <path
+                              d="M17.7 22.6.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4zm0 0L.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4z"
+                            ></path></svg
+                        ></span>
+                      </button>
                       <ul class="nav__menu__item__subMenu__item__sub">
                         <li class="nav__menu__item__subMenu__item__sub__item">
                           <a
@@ -195,7 +204,7 @@
                           >
                         </li>
                         <li class="nav__menu__item__subMenu__item__sub__item">
-                            <a
+                          <a
                             href="#"
                             class="nav__menu__item__subMenu__item__sub__item__link"
                             >Europe</a
@@ -217,183 +226,207 @@
                         </li>
                       </ul>
                     </li>
-                    <li class="nav__menu__item__subMenu__item">
-                      <a href="#" class="nav__menu__item__subMenu__item__link"
-                        >US & Canada</a
-                      >
-                    </li>
-                    <li class="nav__menu__item__subMenu__item">
-                      <a href="#" class="nav__menu__item__subMenu__item__link">
-                        UK</a
-                      ><!-- arrow icon  -->
-            <button>
-                <span class="nav_icon arrow">
-                <svg
-                viewBox="0 0 32 32"
-                width="1em"
-                height="1em"
-                category="arrows"
-                icon="chevron-down"
-                
-                >
-                <path
-                d="M17.7 22.6.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4zm0 0L.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4z"
-                ></path></svg
-                ></span>
-                </li>
-                </button>
-                <ul class="nav__menu__item__subMenu__item__link__sub">
-                    <li class="nav__menu__item__subMenu__item__link__sub__item"><a href="#"class="nav__menu__item__subMenu__item__link__sub__item__link">UK</a></li>
-                </ul>
-                    </li>
-                    <li class="nav__menu__item__subMenu__item__link__sub__item"><a href="#"class="nav__menu__item__subMenu__item__link__sub__item__link">England</a></li>
-                </ul>
-                    </li>
-                    <li class="nav__menu__item__subMenu__item__link__sub__item"><a href="#"class="nav__menu__item__subMenu__item__link__sub__item__link">N. Ireland</a></li>
-                </ul>
-                    </li>
-                    <li class="nav__menu__item__subMenu__item__link__sub__item"><a href="#"class="nav__menu__item__subMenu__item__link__sub__item__link">Scotland</a></li>
-                </ul>
-                    </li>
-                    <li class="nav__menu__item__subMenu__item__link__sub__item"><a href="#"class="nav__menu__item__subMenu__item__link__sub__item__link">Wales</a></li>
-                </ul>
-                    </li>
-                    <li class="nav__menu__item__subMenu__item__link__sub__item"><a href="#"class="nav__menu__item__subMenu__item__link__sub__item__link">UK Nations and Regions</a></li>
-                </ul>
-                    </li>
-                    <li class="nav__menu__item__subMenu__item">
-                      <a href="#" class="nav__menu__item__subMenu__item__link">
-                        In Pictures</a
-                      >
-                    </li>
-                    <li class="nav__menu__item__subMenu__item">
-                        <a href="#" class="nav__menu__item__subMenu__item__link">
-                        BBC Verify</a
-                      >
-                    </li>
                   </ul>
                 </li>
+
+                <li class="nav__menu__item__subMenu__item">
+                  <a href="#" class="nav__menu__item__subMenu__item__link"
+                    >US & Canada</a
+                  >
+                </li>
+                <li class="nav__menu__item__subMenu__item">
+                  <a href="#" class="nav__menu__item__subMenu__item__link">
+                    UK</a
+                  ><!-- arrow icon  -->
+                  <button>
+                    <span class="nav_icon arrow">
+                      <svg
+                        viewBox="0 0 32 32"
+                        width="1em"
+                        height="1em"
+                        category="arrows"
+                        icon="chevron-down"
+                      >
+                        <path
+                          d="M17.7 22.6.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4zm0 0L.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4z"
+                        ></path></svg
+                    ></span>
+                  </button>
+                </li>
+                <ul class="nav__menu__item__subMenu__item__link__sub">
+                  <li class="nav__menu__item__subMenu__item__link__sub__item">
+                    <a
+                      href="#"
+                      class="nav__menu__item__subMenu__item__link__sub__item__link"
+                      >UK</a
+                    >
+                  </li>
+
+                  <li class="nav__menu__item__subMenu__item__link__sub__item">
+                    <a
+                      href="#"
+                      class="nav__menu__item__subMenu__item__link__sub__item__link"
+                      >England</a
+                    >
+                  </li>
+
+                  <li class="nav__menu__item__subMenu__item__link__sub__item">
+                    <a
+                      href="#"
+                      class="nav__menu__item__subMenu__item__link__sub__item__link"
+                      >N. Ireland</a
+                    >
+                  </li>
+
+                  <li class="nav__menu__item__subMenu__item__link__sub__item">
+                    <a
+                      href="#"
+                      class="nav__menu__item__subMenu__item__link__sub__item__link"
+                      >Scotland</a
+                    >
+                  </li>
+
+                  <li class="nav__menu__item__subMenu__item__link__sub__item">
+                    <a
+                      href="#"
+                      class="nav__menu__item__subMenu__item__link__sub__item__link"
+                      >Wales</a
+                    >
+                  </li>
+
+                  <li class="nav__menu__item__subMenu__item__link__sub__item">
+                    <a
+                      href="#"
+                      class="nav__menu__item__subMenu__item__link__sub__item__link"
+                      >UK Nations and Regions</a
+                    >
+                  </li>
+
+                  <li class="nav__menu__item__subMenu__item">
+                    <a href="#" class="nav__menu__item__subMenu__item__link">
+                      In Pictures</a
+                    >
+                  </li>
+                  <li class="nav__menu__item__subMenu__item">
+                    <a href="#" class="nav__menu__item__subMenu__item__link">
+                      BBC Verify</a
+                    >
+                  </li>
+                </ul>
+
                 <li class="nav__menu__item">
                   <a href="#" class="nav__menu__item__link">Sport</a>
                 </li>
                 <li class="nav__menu__item">
                   <a href="#" class="nav__menu__item__link">Business</a>
-                    <!-- arrow icon  -->
-            <button>
-            <span class="nav_icon arrow">
-            <svg
-            viewBox="0 0 32 32"
-            width="1em"
-            height="1em"
-            category="arrows"
-            icon="chevron-down"
-            
-            >
-            <path
-              d="M17.7 22.6.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4zm0 0L.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4z"
-            ></path></svg
-            ></span>
-            </li>
-            </button>
-        </li>
-        <li class="nav__menu__item">
-            <a href="#" class="nav__menu__item__link">Innovation</a>
-            <!-- arrow icon  -->
-    <button>
-    <span class="nav_icon arrow">
-    <svg
-    viewBox="0 0 32 32"
-    width="1em"
-    height="1em"
-    category="arrows"
-    icon="chevron-down"
-    
-    >
-    <path
-      d="M17.7 22.6.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4zm0 0L.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4z"
-    ></path></svg
-    ></span>
-    </li>
-    </button>
-</li>
-<li class="nav__menu__item">
-            <a href="#" class="nav__menu__item__link">Culture</a>
-            <!-- arrow icon  -->
-            <button>
-            <span class="nav_icon arrow">
-            <svg
-            viewBox="0 0 32 32"
-            width="1em"
-            height="1em"
-            category="arrows"
-            icon="chevron-down"
-            
-            >
-            <path
-            d="M17.7 22.6.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4zm0 0L.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4z"
-            ></path></svg
-            ></span>
-          </button>
-            </li>
-                
-                <li class="nav__menu__item">
-                  <a href="#" class="nav__menu__item__link">Travel</a><!-- arrow icon  -->
+                  <!-- arrow icon  -->
                   <button>
-                  <span class="nav_icon arrow">
-                  <svg
-                  viewBox="0 0 32 32"
-                  width="1em"
-                  height="1em"
-                  category="arrows"
-                  icon="chevron-down"
-                  
-                  >
-                  <path
-                  d="M17.7 22.6.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4zm0 0L.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4z"
-                  ></path></svg
-                  ></span>
-                  </li>
+                    <span class="nav_icon arrow">
+                      <svg
+                        viewBox="0 0 32 32"
+                        width="1em"
+                        height="1em"
+                        category="arrows"
+                        icon="chevron-down"
+                      >
+                        <path
+                          d="M17.7 22.6.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4zm0 0L.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4z"
+                        ></path></svg
+                    ></span>
                   </button>
                 </li>
                 <li class="nav__menu__item">
-                  <a href="#" class="nav__menu__item__link">Earth</a><!-- arrow icon  -->
+                  <a href="#" class="nav__menu__item__link">Innovation</a>
+                  <!-- arrow icon  -->
                   <button>
-                  <span class="nav_icon arrow">
-                  <svg
-                  viewBox="0 0 32 32"
-                  width="1em"
-                  height="1em"
-                  category="arrows"
-                  icon="chevron-down"
-                  
-                  >
-                  <path
-                  d="M17.7 22.6.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4zm0 0L.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4z"
-                  ></path></svg
-                  ></span>
-                  </li>
+                    <span class="nav_icon arrow">
+                      <svg
+                        viewBox="0 0 32 32"
+                        width="1em"
+                        height="1em"
+                        category="arrows"
+                        icon="chevron-down"
+                      >
+                        <path
+                          d="M17.7 22.6.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4zm0 0L.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4z"
+                        ></path></svg
+                    ></span>
+                  </button>
+                </li>
+                <li class="nav__menu__item">
+                  <a href="#" class="nav__menu__item__link">Culture</a>
+                  <!-- arrow icon  -->
+                  <button>
+                    <span class="nav_icon arrow">
+                      <svg
+                        viewBox="0 0 32 32"
+                        width="1em"
+                        height="1em"
+                        category="arrows"
+                        icon="chevron-down"
+                      >
+                        <path
+                          d="M17.7 22.6.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4zm0 0L.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4z"
+                        ></path></svg
+                    ></span>
+                  </button>
+                </li>
+
+                <li class="nav__menu__item">
+                  <a href="#" class="nav__menu__item__link">Travel</a
+                  ><!-- arrow icon  -->
+                  <button>
+                    <span class="nav_icon arrow">
+                      <svg
+                        viewBox="0 0 32 32"
+                        width="1em"
+                        height="1em"
+                        category="arrows"
+                        icon="chevron-down"
+                      >
+                        <path
+                          d="M17.7 22.6.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4zm0 0L.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4z"
+                        ></path></svg
+                    ></span>
+                  </button>
+                </li>
+                <li class="nav__menu__item">
+                  <a href="#" class="nav__menu__item__link">Earth</a
+                  ><!-- arrow icon  -->
+                  <button>
+                    <span class="nav_icon arrow">
+                      <svg
+                        viewBox="0 0 32 32"
+                        width="1em"
+                        height="1em"
+                        category="arrows"
+                        icon="chevron-down"
+                      >
+                        <path
+                          d="M17.7 22.6.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4zm0 0L.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4z"
+                        ></path></svg
+                    ></span>
                   </button>
                 </li>
                 <li class="nav__menu__item">
                   <a href="#" class="nav__menu__item__link">Video</a>
                 </li>
                 <li class="nav__menu__item">
-                  <a href="#" class="nav__menu__item__link">Live</a><!-- arrow icon  -->
+                  <a href="#" class="nav__menu__item__link">Live</a
+                  ><!-- arrow icon  -->
                   <button>
-                  <span class="nav_icon arrow">
-                  <svg
-                  viewBox="0 0 32 32"
-                  width="1em"
-                  height="1em"
-                  category="arrows"
-                  icon="chevron-down"
-                  
-                  >
-                  <path
-                  d="M17.7 22.6.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4zm0 0L.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4z"
-                  ></path></svg
-                  ></span>
-                  </li>
+                    <span class="nav_icon arrow">
+                      <svg
+                        viewBox="0 0 32 32"
+                        width="1em"
+                        height="1em"
+                        category="arrows"
+                        icon="chevron-down"
+                      >
+                        <path
+                          d="M17.7 22.6.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4zm0 0L.9 4.2v6.7L16 27.8 31.1 11V4.3L14.3 22.6h3.4z"
+                        ></path></svg
+                    ></span>
                   </button>
                 </li>
               </ul>
