@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BBC</title>
-    <link rel="stylesheet" href="./style.css" />
-    <style>
-      button .nav_icon svg {
-        fill: red;
-        height: 20px;
-        width: 20px;
-      }
-    </style>
+    <!-- font family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main style  -->
+    <link rel="stylesheet" href="./style1.css" />
+
+    <style></style>
   </head>
   <body>
     <!-- arrow icon 
@@ -99,7 +102,12 @@
           <div class="navbar__toggle">
             <nav class="nav">
               <div class="nav__search">
-                <input type="text" name="" id="" />
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Search news, topics and more"
+                />
                 <!-- search icon -->
                 <button>
                   <span class="nav_icon search">
@@ -117,11 +125,12 @@
                   </span>
                 </button>
               </div>
+              <!-- nav menu start  -->
               <ul class="nav__menu">
-                <li class="nav__menu__item">
-                  <a href="#" class="nav__menu__item__link">Home</a>
+                <li class="item">
+                  <a href="#" class="item__link">Home</a>
                 </li>
-                <li class="nav__menu__item drop">
+                <li class="item drop">
                   <h1>News</h1>
                   <!-- arrow icon  -->
                   <button>
@@ -138,32 +147,32 @@
                         ></path></svg
                     ></span>
                   </button>
-
-                  <ul class="nav__menu__item__subMenu">
-                    <li class="nav__menu__item__subMenu__item">
-                      <a href="#" class="nav__menu__item__subMenu__item__link">
-                        News
+                  <!--FIXME-->
+                  <ul class="nav__menu__subMenu">
+                    <li class="item">
+                      <a href="#" class="item__link">
+                        <p>News</p>
                       </a>
                     </li>
-                    <li class="nav__menu__item__subMenu__item">
-                      <a href="#" class="nav__menu__item__subMenu__item__link">
-                        NewsIsrael-Gaza War
-                      </a>
-                    </li>
-
-                    <li class="nav__menu__item__subMenu__item">
-                      <a href="#" class="nav__menu__item__subMenu__item__link">
-                        War in Ukraine
+                    <li class="item">
+                      <a href="#" class="item__link">
+                        <p>NewsIsrael-Gaza War</p>
                       </a>
                     </li>
 
-                    <li class="nav__menu__item__subMenu__item">
-                      <a href="#" class="nav__menu__item__subMenu__item__link">
-                        India Election
+                    <li class="item">
+                      <a href="#" class="item__link">
+                        <p>War in Ukraine</p>
                       </a>
                     </li>
 
-                    <li class="nav__menu__item__subMenu__item drop">
+                    <li class="item">
+                      <a href="#" class="item__link">
+                        <p>India Election</p>
+                      </a>
+                    </li>
+
+                    <li class="item drop">
                       <h1>World</h1>
                       <!-- arrow icon  -->
                       <button>
@@ -180,52 +189,36 @@
                             ></path></svg
                         ></span>
                       </button>
-                      <ul class="nav__menu__item__subMenu__item__sub">
-                        <li class="nav__menu__item__subMenu__item__sub__item">
-                          <a
-                            href="#"
-                            class="nav__menu__item__subMenu__item__sub__item__link"
-                            >Africa</a
-                          >
-                        </li>
-                        <li class="nav__menu__item__subMenu__item__sub__item">
-                          <a
-                            href="#"
-                            class="nav__menu__item__subMenu__item__sub__item__link"
-                          >
-                            Asia
+                      <!--FIXME-->
+                      <ul class="nav__menu__subMenu__subMenu">
+                        <li class="item">
+                          <a href="#" class="item__link">
+                            <p>Africa</p>
                           </a>
                         </li>
-                        <li class="nav__menu__item__subMenu__item__sub__item">
-                          <a
-                            href="#"
-                            class="nav__menu__item__subMenu__item__sub__item__link"
-                          >
-                            Australia
+                        <li class="item">
+                          <a href="#" class="item__link">
+                            <p>Asia</p>
                           </a>
                         </li>
-                        <li class="nav__menu__item__subMenu__item__sub__item">
-                          <a
-                            href="#"
-                            class="nav__menu__item__subMenu__item__sub__item__link"
-                          >
-                            Europe
+                        <li class="item">
+                          <a href="#" class="item__link">
+                            <p>Australia</p>
                           </a>
                         </li>
-                        <li class="nav__menu__item__subMenu__item__sub__item">
-                          <a
-                            href="#"
-                            class="nav__menu__item__subMenu__item__sub__item__link"
-                          >
-                            Latin America
+                        <li class="item">
+                          <a href="#" class="item__link">
+                            <p>Europe</p>
                           </a>
                         </li>
-                        <li class="nav__menu__item__subMenu__item__sub__item">
-                          <a
-                            href="#"
-                            class="nav__menu__item__subMenu__item__sub__item__link"
-                          >
-                            Middle East
+                        <li class="item">
+                          <a href="#" class="item__link">
+                            <p>Latin America</p>
+                          </a>
+                        </li>
+                        <li class="item">
+                          <a href="#" class="item__link">
+                            <p>Middle East</p>
                           </a>
                         </li>
                       </ul>
@@ -233,12 +226,10 @@
                   </ul>
                 </li>
 
-                <li class="nav__menu__item__subMenu__item">
-                  <a href="#" class="nav__menu__item__subMenu__item__link"
-                    >US & Canada</a
-                  >
+                <li class="item">
+                  <a href="#" class="item__link"> <p>US & Canada</p> </a>
                 </li>
-                <li class="nav__menu__item__subMenu__item drop">
+                <li class="item drop">
                   <h1>UK</h1>
                   <!-- arrow icon  -->
                   <button>
@@ -256,71 +247,53 @@
                     ></span>
                   </button>
                 </li>
-                <ul class="nav__menu__item__subMenu__item__link__sub">
-                  <li class="nav__menu__item__subMenu__item__link__sub__item">
-                    <a
-                      href="#"
-                      class="nav__menu__item__subMenu__item__link__sub__item__link"
-                    >
-                      UK
+                <!-- sub menu start-->
+                <!--FIXME-->
+                <ul class="nav__menu__subMenu__subMenu">
+                  <li class="item">
+                    <a href="#" class="item__link">
+                      <p>UK</p>
                     </a>
                   </li>
 
-                  <li class="nav__menu__item__subMenu__item__link__sub__item">
-                    <a
-                      href="#"
-                      class="nav__menu__item__subMenu__item__link__sub__item__link"
-                      >
-                      England
-                      </a
-                    >
-                  </li>
-
-                  <li class="nav__menu__item__subMenu__item__link__sub__item">
-                    <a
-                      href="#"
-                      class="nav__menu__item__subMenu__item__link__sub__item__link"
-                    >
-                      N. Ireland
+                  <li class="item">
+                    <a href="#" class="item__link">
+                      <p>England</p>
                     </a>
                   </li>
 
-                  <li class="nav__menu__item__subMenu__item__link__sub__item">
-                    <a
-                      href="#"
-                      class="nav__menu__item__subMenu__item__link__sub__item__link"
-                      >Scotland</a
-                    >
+                  <li class="item">
+                    <a href="#" class="item__link">
+                      <p>N. Ireland</p>
+                    </a>
                   </li>
 
-                  <li class="nav__menu__item__subMenu__item__link__sub__item">
-                    <a
-                      href="#"
-                      class="nav__menu__item__subMenu__item__link__sub__item__link"
-                      >Wales</a
-                    >
+                  <li class="item">
+                    <a href="#" class="item__link"> <p>Scotland</p> </a>
                   </li>
 
-                  <li class="nav__menu__item__subMenu__item__link__sub__item">
-                    <a
-                      href="#"
-                      class="nav__menu__item__subMenu__item__link__sub__item__link"
-                      >UK Nations and Regions</a
-                    >
+                  <li class="item">
+                    <a href="#" class="item__link"> <p>Wales</p> </a>
+                  </li>
+
+                  <li class="item">
+                    <a href="#" class="item__link">
+                      <p>UK Nations and Regions</p>
+                    </a>
                   </li>
                 </ul>
 
-                <li class="nav__menu__item">
-                  <a href="#" class="nav__menu__item__link">In Pictures</a>
+                <li class="item">
+                  <a href="#" class="item__link"> <p>In Pictures</p> </a>
                 </li>
-                <li class="nav__menu__item">
-                  <a href="#" class="nav__menu__item__link">BBC Verify</a>
+                <li class="item">
+                  <a href="#" class="item__link"> <p>BBC Verify</p> </a>
                 </li>
-                <li class="nav__menu__item">
-                  <a href="#" class="nav__menu__item__link">Sport</a>
+                <li class="item">
+                  <a href="#" class="item__link"> <p>Sport</p> </a>
                 </li>
-                <li class="nav__menu__item">
-                  <a href="#" class="nav__menu__item__link">Business</a>
+                <li class="item">
+                  <a href="#" class="item__link"> <p>Business</p> </a>
                   <!-- arrow icon  -->
                   <button>
                     <span class="nav_icon arrow">
@@ -337,8 +310,8 @@
                     ></span>
                   </button>
                 </li>
-                <li class="nav__menu__item">
-                  <a href="#" class="nav__menu__item__link">Innovation</a>
+                <li class="item">
+                  <a href="#" class="item__link"> <p>Innovation</p> </a>
                   <!-- arrow icon  -->
                   <button>
                     <span class="nav_icon arrow">
@@ -355,8 +328,8 @@
                     ></span>
                   </button>
                 </li>
-                <li class="nav__menu__item">
-                  <a href="#" class="nav__menu__item__link">Culture</a>
+                <li class="item">
+                  <a href="#" class="item__link"> <p>Culture</p> </a>
                   <!-- arrow icon  -->
                   <button>
                     <span class="nav_icon arrow">
@@ -374,8 +347,8 @@
                   </button>
                 </li>
 
-                <li class="nav__menu__item">
-                  <a href="#" class="nav__menu__item__link">Travel</a
+                <li class="item">
+                  <a href="#" class="item__link"> <p>Travel</p> </a
                   ><!-- arrow icon  -->
                   <button>
                     <span class="nav_icon arrow">
@@ -392,8 +365,8 @@
                     ></span>
                   </button>
                 </li>
-                <li class="nav__menu__item">
-                  <a href="#" class="nav__menu__item__link">Earth</a
+                <li class="item">
+                  <a href="#" class="item__link"> <p>Earth</p> </a
                   ><!-- arrow icon  -->
                   <button>
                     <span class="nav_icon arrow">
@@ -410,11 +383,11 @@
                     ></span>
                   </button>
                 </li>
-                <li class="nav__menu__item">
-                  <a href="#" class="nav__menu__item__link">Video</a>
+                <li class="item">
+                  <a href="#" class="item__link"> <p>Video</p> </a>
                 </li>
-                <li class="nav__menu__item">
-                  <a href="#" class="nav__menu__item__link">Live</a
+                <li class="item">
+                  <a href="#" class="item__link"> <p>Live</p> </a
                   ><!-- arrow icon  -->
                   <button>
                     <span class="nav_icon arrow">
@@ -437,34 +410,37 @@
           <div class="navbar__bottom">
             <ul class="menu">
               <li class="menu__item">
-                <a href="#" class="menu__item__link">Home</a>
+                <a href="#" class="menu__item__link"> <p>Home</p> </a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__item__link">News</a>
+                <a href="#" class="menu__item__link">
+                  <p></p>
+                  News</a
+                >
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__item__link">Sport</a>
+                <a href="#" class="menu__item__link"> <p>Sport</p> </a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__item__link">Business</a>
+                <a href="#" class="menu__item__link"> <p>Business</p> </a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__item__link">Innovation</a>
+                <a href="#" class="menu__item__link"> <p>Innovation</p> </a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__item__link">Culture</a>
+                <a href="#" class="menu__item__link"> <p>Culture</p> </a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__item__link">Travel</a>
+                <a href="#" class="menu__item__link"> <p>Travel</p> </a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__item__link">Earth</a>
+                <a href="#" class="menu__item__link"> <p>Earth</p> </a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__item__link">Video</a>
+                <a href="#" class="menu__item__link"> <p>Video</p> </a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__item__link">Live</a>
+                <a href="#" class="menu__item__link"> <p>Live</p> </a>
               </li>
             </ul>
           </div>

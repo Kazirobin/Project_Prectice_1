@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  font: inherit;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+html {
+  font-size: 10px;
+}
+:root {
+  --color--1: #fff;
+  --color--2: #000;
+  --color--3: #3a3c3e;
+  --color--4: #c6c6c6;
+  --font--1: "Roboto Slab", serif;
+  --font--2: "Noto Sans", sans-serif;
+}
+
+/*
+.navbar 
+.navbar__top
+        .icons>.icon
+        .logo
+        .empty
+    .navbar__toggle
+        .nav
+            .nav__search
+            ul.nav__menu
+                li.item
+                .item__link
+                    ul.nav__menu__subMenu
+                        li.item
+                        .item__link
+                            ul.nav__menu__subMenu__subMenu
+                                li.item
+                                .item__link
+    .navbar__bottom
+        ul.menu
+            li.menu__item   
+              .menu__item__link   
+*/
+.navbar {
+  background-color: var(--color--1);
+  font-family: var(--font--1);
+  position: relative;
+}
+.navbar__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid rebeccapurple;
+}
+.icons {
+  display: flex;
+}
+.icon {
+  padding-inline-start: 10px;
+}
+.nav_icon svg {
+  fill: var(--color--2);
+}
+.logo h1 span {
+  color: var(--color--1);
+  background: var(--color--2);
+  margin-inline-start: 5px;
+  font-size: 2rem;
+  padding: 3px 10px;
+}
+.nav {
+  border: 3px solid red;
+  width: 400px;
+  padding-inline-start: 10px;
+  /* position: fixed; */
+}
+.nav__search {
+  border: 3px solid pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__search input {
+  width: 100%;
+  height: 4.1rem;
+  border: 2px solid var(--color--3);
+}
+.nav__search input::placeholder {
+  padding-inline-start: 10px;
+  font-size: 1.5rem;
+  line-height: 4.5rem;
+}
+.nav__search button {
+  padding: 9px;
+  background-color: var(--color--2);
+}
+.nav__search button .nav_icon svg {
+  fill: var(--color--1);
+}
