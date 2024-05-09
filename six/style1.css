@@ -56,6 +56,16 @@ html {
   align-items: center;
   border: 3px solid rebeccapurple;
 }
+.navbar__toggle{
+  position: fixed;
+}
+.navbar__bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #000;
+}
 .icons {
   display: flex;
 }
@@ -75,6 +85,7 @@ html {
 .nav {
   border: 3px solid red;
   width: 400px;
+  height: auto;
   padding-inline-start: 10px;
   /* position: fixed; */
 }
@@ -100,4 +111,16 @@ html {
 }
 .nav__search button .nav_icon svg {
   fill: var(--color--1);
+}
+.title{
+  display: flex;
+  justify-content: space-between;
+  background-color: aqua;
+
+}
+.item__link > p,
+.menu__item__link >p,
+.title > h1,
+.nav_icon > svg{
+  font-size: 28px;
 }
