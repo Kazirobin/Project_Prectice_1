@@ -54,18 +54,12 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 3px solid rebeccapurple;
+  border: 3px solid gray;
 }
 .navbar__toggle{
   position: fixed;
 }
-.navbar__bottom{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background: #000;
-}
+
 .icons {
   display: flex;
 }
@@ -84,7 +78,7 @@ html {
 }
 .nav {
   border: 3px solid red;
-  width: 400px;
+  width: 300px;
   height: auto;
   padding-inline-start: 10px;
   /* position: fixed; */
@@ -122,5 +116,21 @@ html {
 .menu__item__link >p,
 .title > h1,
 .nav_icon > svg{
-  font-size: 28px;
+  font-size: 18px;
+}
+/* .navbar__bottom */
+.navbar__bottom .menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 3px solid purple;
+}
+.menu__item{
+  background-color: aqua;
+  margin-left: 10px;
+  &:first-child{
+    margin-left: 0px;
+
+  }
 }
