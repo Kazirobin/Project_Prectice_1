@@ -1,25 +1,74 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    outline: 0;
-    border: 0;
-    list-style: none;
-    text-decoration: none;
-    font: inherit;
+/* mapping
+  .nav
+    .logo > button > span.icons > svg.logo
+    .nav-menu > ul.menu > li.item > a.item__link > [(p) (button > span.icons >svg.icon)]
+     <<drop>> li.item > ul.sub__menu > li.item > a.item__link > p 
+    .actions 
+    > .live > (button) (h1) 
+    > .search > button > span.icons > svg.logo
+    > .login > (p) (button)
+    >.toggle__bars ( button > span.icons > svg.open) ( button > span.icons > svg.close) */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  font: inherit;
 }
-html{
-    font-size: 10px;
+html {
+  font-size: 10px;
 }
-.item__link{
-    background-color: aqua;
+.icons .icon {
+    width: 20px;
+  }
+  .icons .logo {
+    width: 200px;
+  }
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+.nav-menu .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: peru;
+    width: 600px;
+    flex-wrap: wrap;
+}
+.nav-menu .menu .item{
+    background-color: yellowgreen;
     display: inline-block;
-    color: black;
+}
+.menu .item p{
     font-size: 2rem;
 }
-.drop{
-    display: flex;
-    max-width: 100px;
-    justify-content: space-between;
-    align-items: center;
+.menu .item .item__link {
+  background-color: aqua;
+  display: inline-block;
+  color: black;
+  font-size: 2rem;
+  width: 100px;
 }
+.sub__menu{
+    position: relative;
+    background-color: firebrick;
+    width: 200px;
+}
+.sub__menu .item{
+    position: absolute;
+    width: 200px;
+}
+
+/* .drop {
+  display: flex;
+  max-width: 100px;
+  justify-content: space-between;
+  align-items: center;
+} */
