@@ -34,12 +34,7 @@ html {
   color: #fff;
   background-color: blue;
 }
-@media (max-width:1000px) {
- 
-  .menu{
-    display: none !important;
-  }
-}
+
 /* font sizing  */
 .menu .item p,
 .menu .item h1,
@@ -56,6 +51,66 @@ html {
 .icons .logo {
   width: 180px;
 }
+.nav{
+  position: relative;
+  padding-inline: 20px;
+}
+.actions{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  padding-block: 20px;
+}
+.live_link{
+  display: flex;
+  height: 27px;
+}
+.login__link button{
+  padding-top: 2px;
+  margin-inline: 20px;
+}
+.toggle__bars{
+  padding-top: 2px;
+  position: relative;
+  height: 30px;
+  width: 30px;
+}
+.toggle__bars .close{
+  opacity: 0;
+  background-color: #fff;
+}
+.toggle__bars.active .close{
+  opacity: 1;
+  background-color: #fff;
+}
+.toggle__bars .open{
+  background-color: #fff;
+  z-index: 1;
+  display: block;
+  position: relative;
+}
+.toggle__bars.active .open{
+  background-color: #fff;
+  z-index: 0;
+  display: block;
+  position: relative;
+}
+.toggle__bars button{ 
+  position: absolute;
+}
+.search__link{
+  display: none;
+}
+.login__link p{
+  display: none;
+}
+
+
+
+
+
+@media (min-width:1000px) {
 /* nav total structure */
 .nav {
   display: flex;
@@ -67,10 +122,6 @@ html {
   position: fixed;
   background-color: #fff;
 }
-@media (max-width:1000){
-  
-
-}
 /* nav menu structure  */
 .logo ,
 .icon{
@@ -80,9 +131,6 @@ html {
 .nav-menu .menu {
   display: block;
   padding-inline-end: 10px;
-  @media (max-width:1000) {
-    display: none !important;
-  }
 }
 /* actions structure  */
 .actions{
@@ -195,4 +243,5 @@ html {
 .sub__menu .item {
   position: absolute;
   width: 200px;
+}
 }

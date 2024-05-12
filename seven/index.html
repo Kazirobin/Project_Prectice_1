@@ -226,7 +226,7 @@
             </button>
           </a>
         </div>
-        <div class="toggle__bars">
+        <div class="toggle__bars ">
           <!-- navbar open icon  -->
           <button>
             <span class="icons open">
@@ -266,5 +266,11 @@
     <div class="sections">
       <h1>hello</h1>
     </div>
+    <script>
+      const bar = document.querySelector('.toggle__bars');
+      bar.addEventListener('click',() => {
+        bar.classList.toggle('active')
+      })
+    </script>
   </body>
 </html>
