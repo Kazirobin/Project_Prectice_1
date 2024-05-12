@@ -8,7 +8,7 @@
     <style></style>
   </head>
   <body>
-    <nav class="nav">
+    <nav class="nav active">
       <div class="logo">
         <!-- logo icon  -->
         <button>
@@ -94,7 +94,7 @@
           <li class="item">
             <a href="#" class="item__link"><p class="fw-7">Video</p></a>
           </li>
-          <li class="item drop">
+          <li class="item drop ">
             <p class="fw-7">More
 
               <!-- Arrow icon  -->
@@ -267,8 +267,19 @@
       <h1>hello</h1>
     </div>
     <script>
+      const nav = document.querySelector('.nav');
+      const drop = document.querySelectorAll('.drop');
       const bar = document.querySelector('.toggle__bars');
+      nav.addEventListener('click',() => {
+      })
+      drop.forEach(all=>{
+
+        all.addEventListener('click',() => {
+          all.classList.toggle('active')
+        })
+      })
       bar.addEventListener('click',() => {
+        nav.classList.toggle('active')
         bar.classList.toggle('active')
       })
     </script>
