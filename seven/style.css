@@ -21,6 +21,7 @@
 html {
   font-size: 10px;
 }
+
 .sections{
   display: block;
   height: 700px;
@@ -51,7 +52,10 @@ html {
 .icons .logo {
   width: 180px;
 }
-
+.nav-menu{
+  overflow-y: scroll;
+  position: relative;
+}
 @media (max-width:1000px) {
   
   .nav{
