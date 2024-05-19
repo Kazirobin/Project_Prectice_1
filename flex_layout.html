@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .boxs{
+            display: flex;
+            justify-content: space-between;
+        }
+        .box:nth-child(1){
+            background-color: red;
+        }
+        .box:nth-child(2){
+            display: flex;
+            gap: 10px;
+            background-color: green;
+        }
+        .box:nth-child(3){
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxs">
+        <div class="box">
+            <h1>LOGO</h1>
+        </div>
+        <div class="box">
+            <h1>Log in</h1>
+            <h1>Sign in</h1>
+        </div>
+        <div class="box">
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+                <li><a href="#">Link 5</a></li>
+                <li><a href="#">Link 6</a></li>
+                <li><a href="#">Link 7</a></li>
+                <li><a href="#">Link 8</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
