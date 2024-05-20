@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxs {
+            border: 3px solid red;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            align-items: stretch; /* Stretch to match tallest content */
+        }
+        .box {
+            border: 3px solid transparent;
+            flex: 1; /* Make both boxes take up equal space */
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .box:first-child {
+            border-color: pink;
+        }
+        .box:last-child {
+            border-color: yellow;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            flex-wrap: wrap;
+            flex: 1; /* Ensure the ul takes up all available space in the box */
+            border: 3px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxs">
+        <div class="box">
+            <ul>
+                <li>one</li>
+                <li>two</li>
+                <li>three
+                    <ul>
+                        <li>three one</li>
+                        <li>three two</li>
+                        <li>three three</li>
+                    </ul>
+                </li>
+                <li>fore</li>
+            </ul>
+        </div>
+        <div class="box">
+            height same as box one
+        </div>
+    </div>
+</body>
+</html>
