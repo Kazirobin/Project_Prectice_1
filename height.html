@@ -14,7 +14,6 @@
         }
         .box {
             border: 3px solid transparent;
-            flex: 1; /* Make both boxes take up equal space */
             padding: 10px;
             display: flex;
             flex-direction: column;
@@ -29,16 +28,14 @@
             margin: 0;
             padding: 0;
             list-style: none;
-            flex-wrap: wrap;
-            flex: 1; /* Ensure the ul takes up all available space in the box */
             border: 3px solid;
         }
     </style>
 </head>
 <body>
     <div class="boxs">
-        <div class="box">
-            <ul>
+        <div class="box" id="box1">
+            <ul id="list">
                 <li>one</li>
                 <li>two</li>
                 <li>three
@@ -46,14 +43,30 @@
                         <li>three one</li>
                         <li>three two</li>
                         <li>three three</li>
+                        <li>three three</li>
+                        <li>three three</li>
                     </ul>
                 </li>
                 <li>fore</li>
             </ul>
         </div>
-        <div class="box">
+        <div class="box" id="box2">
             height same as box one
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var ul = document.getElementById('list');
+            var box1 = document.getElementById('box1');
+            var box2 = document.getElementById('box2');
+            
+            // Get the height of the ul element
+            var ulHeight = ul.offsetHeight;
+            
+            // Set the height of both boxes to the height of the ul element
+            box1.style.height = ulHeight + 'px';
+            box2.style.height = ulHeight + 'px';
+        });
+    </script>
 </body>
 </html>

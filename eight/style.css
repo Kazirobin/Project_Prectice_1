@@ -12,30 +12,20 @@ html {
   font-size: 10px;
 }
 nav {
-  color: red;
+  background-color: #fff;
+  border: 3px solid red;
+  overflow: hidden;
 }
 nav .top{
     position:fixed;
+    display: flex;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: aqua;
     padding-inline: 10px;
     border: 3px solid;
 }
-nav .bottom{
-    height: 100px;
-    @media(max-width:1200px){
-        height: 20vh;
-        border: #000 5px solid;
-        background-color: #fff;
-    }
-    @media(max-width:800px){
-        height: 100vh;
-        border: #000 5px solid;
-        background-color: #fff;
-    }
-}
+
 
 .drop button .arrow .icon{
     transition: all 0.3s ease-in-out;
@@ -121,94 +111,15 @@ padding: 0;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
-@media (min-width: 800px) {
-  nav .top {
-    display: flex;
-    justify-content: space-between;
+
+nav .bottom{
+  height: 100px;
+  @media(max-width:1200px){
+      border: #000 5px solid;
+      background-color: #fff;
   }
-  .top .nav-menu {
-    flex: 1;
-  }
-  .nav-menu .menu {
-    display: flex;
-    align-items: baseline;
-  }
-  .actions {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-  }
-  .item {
-    position: relative;
-  }
-  .item:hover .sub__menu {
-    display: block;
-  }
-  .sub__menu {
-    position: absolute;
-    width: 150px;
-    display: none;
-  }
-  .search__link button .icons .icon{
-    display: block;
-}
-.login__link p{
-    display: block;
-}
-.toggle__bars{
-    display: none;
-}
-.login__link button .user{
-    display: none;
-}
-}
-@media (max-width: 800px) {
-    .search__link button .icons .icon{
-        display: none;
-    }
-    .login__link p{
-        display: none;
-    }
-  nav .top {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .top .nav-menu {
-    flex: 1;
-    order: 2;
-    flex-grow: 600px;
-  }
-  .top .logo {
-    width: 50%;
-  }
-  .nav-menu .menu {
-    display: block;
-    flex-direction: column;
-    width: 100%;
-  }
-  .actions {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 5px;
-    order: 1;
-    width: 50%;
-  }
-  .live .live_link,
-  .login__link,
-  .navbar__toggle {
-    display: flex;
-  }
-  .item {
-    position: relative;
-  }
-  .item:hover .sub__menu {
-    display: block;
-  }
-  .sub__menu {
-    width: 150px;
-    display: none;
+  @media(max-width:800px){
+      border: #000 5px solid;
+      background-color: #fff;
   }
 }

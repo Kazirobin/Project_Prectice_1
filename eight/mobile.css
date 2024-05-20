@@ -1,0 +1,64 @@
+@media (max-width: 800px) {
+    .search__link button .icons .icon{
+        display: none;
+    }
+    .login__link p{
+        display: none;
+    }nav{
+        height: 80px;
+    }
+    nav.active{
+        position: fixed;
+        left: 0;
+        right: 0;
+        margin: auto;
+        overflow: auto;
+        height: 100vh;
+    }
+  nav .top {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    max-width: 600px;
+    position: absolute;
+    padding-top: 20px;
+    margin-inline: auto;
+    left: 0;
+    right: 0;
+}
+nav .bottom{
+    width: 100%;
+    z-index: -1;
+      position: absolute;
+  }
+  .top .nav-menu {
+    flex: 1;
+    order: 2;
+    display: none;
+}
+.top.active .nav-menu .menu{
+    padding: 10px;
+  }
+   nav.active .bottom{
+    display: none;
+  }
+  nav.active .nav-menu {
+    display: flex;
+  }
+  .top .logo {
+    width: 50%;
+  }
+  .nav-menu .menu {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+  }
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    order: 1;
+    width: 50%;
+  }
+}

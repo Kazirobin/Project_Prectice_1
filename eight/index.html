@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Al Jajira</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./desktop.css">
+    <link rel="stylesheet" href="./mobile.css">
     <style>
       section:nth-child(odd) {
         background-color: pink;
@@ -12,21 +14,21 @@
         height: 400px;
       }
       section:nth-child(even){
-        background-color: aqua;
+        background-color: red;
         border: 3px solid green;
         height: 400px;
       }
     </style>
 </head>
 <body>
-    <nav>
-        <div class="top">
+    <nav class="active">
+        <div class="top active" id="top">
             <div class="logo">
                 <a href="#">
                     <img src="./logo_2.png" alt="">
                 </a>
             </div>
-            <div class="nav-menu">
+            <div class="nav-menu" id="mainMenu">
                 <ul class="menu">
                   <li class="item drop">
                     <p class="fw-7">
@@ -254,7 +256,7 @@
                 </div>
               </div>
         </div>
-        <div class="bottom">
+        <div class="bottom" id="bottom">
           <h1> hello</h1>
         </div>
     </nav>  
@@ -270,5 +272,25 @@
     <section>
       section fore
     </section>
+    <script>
+        //       document.addEventListener("DOMContentLoaded", function() {
+        //     var mainMenu = document.getElementById('mainMenu');
+        //     var top = document.getElementById('top');
+        //     var bottom = document.getElementById('bottom');
+            
+        //     // Get the height of the ul element
+        //     var mainMenuHeight = mainMenu.offsetHeight;
+            
+        //     // Set the height of both boxes to the height of the mainMenu element
+        //     top.style.height = mainMenuHeight + 'px';
+        //     bottom.style.height = mainMenuHeight+10 + 'px';
+        // });
+
+        const toggleBars =document.querySelector('.toggle__bars')
+        const nav = document.querySelector('nav')
+        toggleBars.addEventListener('click',() => {
+          nav.classList.toggle('active')
+        })
+    </script>
 </body>
 </html>
