@@ -26,7 +26,10 @@ nav .top{
     border: 3px solid;
 }
 
-
+.header{
+  display: block;
+  height: 80px;
+}
 .drop button .arrow .icon{
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -34,7 +37,7 @@ nav .top{
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
 }
-.drop:hover button .arrow .icon{
+.drop.active button .arrow .icon{
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -90,9 +93,7 @@ padding: 0;
 .actions{
     background-color: #fff;
 }
-.toggle__bars button .close{
-    display: none;
-}
+
 .toggle__bars button{
     margin-inline-start: 20px;
 }
@@ -112,14 +113,4 @@ padding: 0;
     -o-border-radius: 20px;
 }
 
-nav .bottom{
-  height: 100px;
-  @media(max-width:1200px){
-      border: #000 5px solid;
-      background-color: #fff;
-  }
-  @media(max-width:800px){
-      border: #000 5px solid;
-      background-color: #fff;
-  }
-}
+

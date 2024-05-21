@@ -22,7 +22,7 @@
 </head>
 <body>
     <nav class="active">
-        <div class="top active" id="top">
+        <div class="top">
             <div class="logo">
                 <a href="#">
                     <img src="./logo_2.png" alt="">
@@ -31,7 +31,7 @@
             <div class="nav-menu" id="mainMenu">
                 <ul class="menu">
                   <li class="item drop">
-                    <p class="fw-7">
+                    <p class="btn-d">
                       News 
                       <!-- Arrow icon  -->
                       <button>
@@ -89,7 +89,7 @@
                     <a href="#" class="item__link"><p class="fw-7">Video</p></a>
                   </li>
                   <li class="item drop ">
-                    <p class="fw-7">More
+                    <p class="btn-d">More
         
                       <!-- Arrow icon  -->
                       <button>
@@ -256,11 +256,9 @@
                 </div>
               </div>
         </div>
-        <div class="bottom" id="bottom">
-          <h1> hello</h1>
-        </div>
-    </nav>  
-    <section>
+    </nav> 
+    <div class="header"></div>
+    <section class="topsec">
       section one
     </section>
     <section>
@@ -273,23 +271,18 @@
       section fore
     </section>
     <script>
-        //       document.addEventListener("DOMContentLoaded", function() {
-        //     var mainMenu = document.getElementById('mainMenu');
-        //     var top = document.getElementById('top');
-        //     var bottom = document.getElementById('bottom');
-            
-        //     // Get the height of the ul element
-        //     var mainMenuHeight = mainMenu.offsetHeight;
-            
-        //     // Set the height of both boxes to the height of the mainMenu element
-        //     top.style.height = mainMenuHeight + 'px';
-        //     bottom.style.height = mainMenuHeight+10 + 'px';
-        // });
 
         const toggleBars =document.querySelector('.toggle__bars')
         const nav = document.querySelector('nav')
         toggleBars.addEventListener('click',() => {
           nav.classList.toggle('active')
+        })
+        const drop = document.querySelectorAll('.drop')
+        const btnD = document.querySelectorAll('.btn-d')
+        btnD.addEventListener('click',() => {
+          drop.forEach((e) => {
+            e.classList.toggle('active')
+          })
         })
     </script>
 </body>

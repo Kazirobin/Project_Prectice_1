@@ -1,11 +1,19 @@
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .search__link button .icons .icon{
         display: none;
     }
     .login__link p{
         display: none;
-    }nav{
-        height: 80px;
+    }
+    nav{
+        height: 80px;        
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    section:first-child{
+      margin-top: 80px !important;
     }
     nav.active{
         position: fixed;
@@ -14,6 +22,26 @@
         margin: auto;
         overflow: auto;
         height: 100vh;
+    }
+    
+    nav .actions .toggle__bars button .close .icon{
+      
+display: none;
+    }
+    nav.active .actions .toggle__bars button .open .icon{
+      
+display: none;
+    }
+    nav.active .actions .toggle__bars button .close .icon{
+      
+display: inline;
+margin-left: -30px;
+    }
+    nav.active .actions .toggle__bars
+    {
+      display: inline;
+      margin: 0;
+      padding: 0 !important;
     }
   nav .top {
     display: flex;
@@ -29,8 +57,7 @@
 }
 nav .bottom{
     width: 100%;
-    z-index: -1;
-      position: absolute;
+    height: 100px;
   }
   .top .nav-menu {
     flex: 1;
@@ -60,5 +87,11 @@ nav .bottom{
     gap: 5px;
     order: 1;
     width: 50%;
+  }
+  .sub__menu{
+    display: none;
+  }
+  .drop.active .sub__menu{
+    display: block;
   }
 }
