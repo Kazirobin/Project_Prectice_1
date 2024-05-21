@@ -277,14 +277,14 @@
         toggleBars.addEventListener('click',() => {
           nav.classList.toggle('active')
         })
-        const drop = document.querySelectorAll('.drop');
-const btnD = document.querySelectorAll('.btn-d');
+        const btnD = document.querySelectorAll('.btn-d');
 
 btnD.forEach(button => {
   button.addEventListener('click', () => {
-    drop.forEach(e => {
-      e.classList.toggle('active');
-    });
+    const drop = button.closest('.drop');
+    if (drop) {
+      drop.classList.toggle('active');
+    }
   });
 });
     </script>
